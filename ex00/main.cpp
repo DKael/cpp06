@@ -6,13 +6,10 @@
 /*   By: hyungdki <hyungdki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 14:10:19 by hyungdki          #+#    #+#             */
-/*   Updated: 2024/02/19 14:10:37 by hyungdki         ###   ########.fr       */
+/*   Updated: 2024/03/18 13:22:10 by hyungdki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
 
-int main() {
-
-
-}
+int main() {}
