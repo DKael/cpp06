@@ -16,6 +16,16 @@ int main() {
   identify(test);
   identify(*test);
   delete test;
+
+  test = new Base;
+
+  identify(test);
+  identify(*test);
+  delete test;
+
+  test = NULL;
+  identify(test);
+  // identify(*test);
 }
 
 Base* generate(void) {
