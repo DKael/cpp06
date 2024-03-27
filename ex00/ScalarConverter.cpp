@@ -417,7 +417,7 @@ std::string ftos(const float val) {
   std::string retVal;
   float div = 0.0f;
 
-  if (std::modff(val, &div) == 0.0f) {
+  if (std::modf(val, &div) == 0.0f) {
     ss << std::fixed << std::setprecision(1) << val;
   } else {
     ss << std::fixed << std::setprecision(10) << val;
