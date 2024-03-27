@@ -62,20 +62,20 @@ void identify(Base& p) {
     std::cout << "p is actually object A\n";
     static_cast<void>(ARef);
     return;
-  } catch (std::bad_cast& bc) {
+  } catch (std::exception& e) {
   }
   try {
     B& BRef = dynamic_cast<B&>(p);
     std::cout << "p is actually object B\n";
     static_cast<void>(BRef);
     return;
-  } catch (std::bad_cast& bc) {
+  } catch (std::exception& e) {
   }
   try {
     C& CRef = dynamic_cast<C&>(p);
     std::cout << "p is actually object C\n";
     static_cast<void>(CRef);
     return;
-  } catch (std::bad_cast& bc) {
+  } catch (std::exception& e) {
   }
 }
