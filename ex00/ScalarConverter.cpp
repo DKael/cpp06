@@ -129,7 +129,8 @@ void ScalarConverter::convert(std::string input) {
       if (trimmed + std::string(1, 'f') != compare) {
         std::cout << "Because of precision, rounding rule is automatically "
                      "applyed to input value!\n";
-        std::cout << "oringin value : \t" << trimmed << '\n';
+        std::cout << "oringin value : \t" << trimmed + std::string(1, 'f')
+                  << '\n';
         std::cout << "converted value : \t" << compare << '\n';
         std::cout
             << "---------------------------------------------------------"
