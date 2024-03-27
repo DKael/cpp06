@@ -111,7 +111,7 @@ void ScalarConverter::convert(std::string input) {
                 trimmed.at(1) == '.')) {
       trimmed.insert(1, "0");
     }
-    trimmed.pop_back();
+    trimmed.erase(trimmed.length() - 1, 1);
     if (trimmed.at(trimmed.length() - 1) == '.') {
       trimmed.push_back('0');
     }
@@ -138,7 +138,7 @@ void ScalarConverter::convert(std::string input) {
       float div = 0.0;
       float mod = 0.0;
 
-      mod = modff(fType, &div);
+      mod = std::modf(fType, &div);
       // conversion float to char
       cType = static_cast<char>(fType);
       if (isDiplayable(cType) == false) {
@@ -220,7 +220,7 @@ void ScalarConverter::convert(std::string input) {
       double div = 0.0;
       double mod = 0.0;
 
-      mod = modf(dType, &div);
+      mod = std::modf(dType, &div);
       // conversion double to char
       cType = static_cast<char>(dType);
       if (isDiplayable(cType) == false) {
