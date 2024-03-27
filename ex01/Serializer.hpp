@@ -1,7 +1,7 @@
 #ifndef SERIALIZAER_HPP
 #define SERIALIZAER_HPP
 
-#include <cstdint>
+typedef unsigned long uintptr_t;
 
 #include "data.hpp"
 

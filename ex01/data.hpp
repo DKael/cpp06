@@ -1,5 +1,5 @@
-#ifndef DATA_CPP
-#define DATA_CPP
+#ifndef DATA_HPP
+#define DATA_HPP
 
 #include <string>
 
@@ -8,11 +8,6 @@ struct Data {
   float fVal;
   double dVal;
   std::string sVal;
-
-  Data();
-  Data(const Data& origin);
-  Data& operator=(const Data& origin);
-  ~Data();
 };
 
 #endif
