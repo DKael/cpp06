@@ -1,5 +1,5 @@
+#include <cstdlib>
 #include <iostream>
-#include <random>
 
 #include "A.hpp"
 #include "B.hpp"
@@ -19,13 +19,11 @@ int main() {
 }
 
 Base* generate(void) {
-  std::random_device rd;
+  srand(static_cast<unsigned int>(time(NULL)));
   int sel;
   Base* retVal;
 
-  std::mt19937 gen(rd());
-  std::uniform_int_distribution<int> dis(0, 2);
-  sel = dis(gen);
+  sel = rand() % 3;
   if (sel == 0) {
     retVal = static_cast<Base*>(new A);
   } else if (sel == 1) {
