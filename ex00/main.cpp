@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <typeinfo>
 
 #include "ScalarConverter.hpp"
 
@@ -9,5 +8,9 @@ int main(int argc, char** argv) {
     std::cout << "Invalid input number!\n";
     return 1;
   }
-  ScalarConverter::convert(argv[1]);
+  try {
+    ScalarConverter::convert(argv[1]);
+  } catch (std::exception& e) {
+    std::cerr << e.what();
+  }
 }
