@@ -10,7 +10,7 @@
 class ScalarConverter {
  private:
   ScalarConverter();
-  ScalarConverter(const ScalarConverter& oring);
+  ScalarConverter(const ScalarConverter& origin);
   ScalarConverter& operator=(const ScalarConverter& origin);
   ~ScalarConverter();
 
